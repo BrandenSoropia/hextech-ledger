@@ -1,9 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+> Uses:
+> - Node v24.12.0
+> - yarn  
 
-```bash
-yarn dev
-```
+In your terminal:
+1.  `yarn`
+2. `yarn dev`
+
+The app should now be served on [localhost:3000](http://localhost:3000/)
