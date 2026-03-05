@@ -1,13 +1,18 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+
+@theme {
+  --color-dark-blue: #142232ff;
+  --color-olive: #63572cff;
+  --color-blue-bell: #2d98ceff;
+  --color-carbon-black: #141815ff;
+  --color-ebony: #626148ff;
+  --color-ash-grey: #b3c2b0ff;
+
+  --color-text-white: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: theme(--color-dark-blue);
 }
 
 html,
