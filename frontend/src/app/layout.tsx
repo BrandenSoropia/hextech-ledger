@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@styles/globals.css";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -16,8 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hextech Ledger",
-  description:
-    "Hextech Ledger Official Site | Fan-made Riftbound Competitive VOD and Learning Hub",
+  description: "Fan-made Riftbound Competitive VOD and Learning Hub.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported but less commonly used
+  // interactiveWidget: 'resizes-visual',
 };
 
 export default function RootLayout({
@@ -27,8 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* Fill screen using Tailwind source: https://stackoverflow.com/a/68083692 */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-carbon-back`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-carbon-back min-h-screen flex flex-col`}
       >
         <NavBar />
         {children}
