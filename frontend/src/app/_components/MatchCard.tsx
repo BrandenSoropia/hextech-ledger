@@ -13,6 +13,7 @@ interface MatchCardProps {
   player2: PlayerDetails;
 }
 
+
 const MatchCard = ({
   eventName,
   round,
@@ -21,17 +22,19 @@ const MatchCard = ({
   player2,
 }: MatchCardProps) => {
   return (
-    <div className="relative">
+    <div className={`relative h-48 w-full md:h-96 md:w-1/3 lg:w-1/5`}>
       <div className="absolute top-0 left-0">
         <p>{eventName}</p>
         <p>{round}</p>
         <p>{date}</p>
       </div>
-      <div>
-        <p>{player1.name}</p>
-      </div>
-      <div>
-        <p>{player2.name}</p>
+      <div className="flex">
+        <div className="w-1/2">
+          <p>{player1.name}</p>
+        </div>
+        <div className="w-1/2">
+          <p>{player2.name}</p>
+        </div>
       </div>
     </div>
   );
