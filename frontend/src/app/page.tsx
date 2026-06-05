@@ -16,7 +16,7 @@ export default function Home() {
         />
         <button type="submit">Search</button>
       </form>
-      <section className="flex flex-1 flex-col bg-linear-to-r from-cyan-500">
+      <section className="flex flex-col">
         <h2>VODS List</h2>
         <MatchList />
       </section>

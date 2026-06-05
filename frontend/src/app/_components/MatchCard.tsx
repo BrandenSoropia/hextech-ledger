@@ -13,6 +13,8 @@ interface MatchCardProps {
   player2: PlayerDetails;
 }
 
+const placeholderStyles = "bg-linear-to-r from-cyan-500 to-blue-500";
+
 
 const MatchCard = ({
   eventName,
@@ -22,7 +24,9 @@ const MatchCard = ({
   player2,
 }: MatchCardProps) => {
   return (
-    <div className={`relative h-48 w-full md:h-96 md:w-1/3 lg:w-1/5`}>
+    <div
+      className={`relative h-48 w-full md:h-96 md:w-1/3 lg:w-1/5 ${placeholderStyles}`}
+    >
       <div className="absolute top-0 left-0">
         <p>{eventName}</p>
         <p>{round}</p>
