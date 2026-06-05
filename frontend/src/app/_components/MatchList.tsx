@@ -2,7 +2,7 @@ import MatchCard from "./MatchCard";
 
 const MatchList = () => {
   return (
-    <div className="flex flex-row flex-wrap gap-8 px-4">
+    <div className="flex flex-row flex-wrap gap-8 px-2">
       <MatchCard
         eventName="Event"
         round="Round 1"
