@@ -9,9 +9,10 @@ export interface Match {
   date: string;
   player1: PlayerDetails;
   player2: PlayerDetails;
-  vodUrl: {
-    type: "youtube";
+  vod: {
+    type: "youtube"; // Might be useful to differentiate
     timestamp?: number;
+    url: string;
   };
   id: string;
 }

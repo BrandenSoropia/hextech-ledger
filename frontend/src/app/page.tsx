@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import MatchList from "./_components/MatchList";
-import { Match } from "./_components/types";
+import { Match } from "@/app/types";
 
 const placeholderMatches: Match[] = [
   {
@@ -12,8 +12,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "a1",
   },
@@ -26,8 +27,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "b2",
   },
@@ -40,8 +42,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "c3",
   },
@@ -54,8 +57,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "d4",
   },
@@ -68,8 +72,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "e5",
   },
@@ -82,8 +87,9 @@ const placeholderMatches: Match[] = [
       backgroundImageSrc: "",
       name: "SomeLongerPlayer TestLongerName",
     },
-    vodUrl: {
+    vod: {
       type: "youtube",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
     },
     id: "f6",
   },
