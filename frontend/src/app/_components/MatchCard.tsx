@@ -1,24 +1,9 @@
 import React from "react";
-
-interface PlayerDetailsProps {
-  backgroundImageSrc: string;
-  name: string;
-}
-
-interface MatchCardProps {
-  eventName: string;
-  round: string;
-  date: string;
-  player1: PlayerDetailsProps;
-  player2: PlayerDetailsProps;
-}
+import { PlayerDetails, Match } from "./types";
 
 const placeholderStyles = "bg-linear-to-r from-cyan-500 to-blue-500";
 
-const PlayerDetailsSection = ({
-  name,
-  backgroundImageSrc,
-}: PlayerDetailsProps) => {
+const PlayerDetailsSection = ({ name, backgroundImageSrc }: PlayerDetails) => {
   return (
     <div
       className={`flex flex-col justify-end align-center w-1/2 bg-[url(${backgroundImageSrc})] bg-cover bg-center ${placeholderStyles}`}
@@ -28,13 +13,7 @@ const PlayerDetailsSection = ({
   );
 };
 
-const MatchCard = ({
-  eventName,
-  round,
-  date,
-  player1,
-  player2,
-}: MatchCardProps) => {
+const MatchCard = ({ eventName, round, date, player1, player2 }: Match) => {
   return (
     <div className={`relative h-48 w-full md:h-96 md:w-1/3 lg:w-1/5`}>
       <div className="absolute top-2 left-2">

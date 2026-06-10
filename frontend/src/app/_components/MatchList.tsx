@@ -1,8 +1,12 @@
 import MatchCard from "./MatchCard";
+import { Match } from "./types";
 
-const MatchList = () => {
+const MatchList = ({ matches }: { matches: Match[] }) => {
   return (
     <div className="flex flex-row flex-wrap gap-8 px-2">
+      {matches.map((match) => (
+        <MatchCard key={match.id} {...match} />
+      ))}
       <MatchCard
         eventName="Event"
         round="Round 1"
