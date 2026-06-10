@@ -14,7 +14,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "a1",
   },
@@ -29,7 +29,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "b2",
   },
@@ -44,7 +44,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "c3",
   },
@@ -59,7 +59,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "d4",
   },
@@ -74,7 +74,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "e5",
   },
@@ -89,7 +89,7 @@ const placeholderMatches: Match[] = [
     },
     vod: {
       type: "youtube",
-      url: "https://www.youtube.com/embed/GkCzsXrZyQA?si=JdVaqRn_usqJbIRp",
+      url: "https://www.youtube.com/embed/GkCzsXrZyQA",
     },
     id: "f6",
   },

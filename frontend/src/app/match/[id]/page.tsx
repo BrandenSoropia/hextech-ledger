@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
+import VideoPlayer from "@/app/_components/VideoPlayer";
 
 interface MatchPageProps {
   params: {
@@ -15,12 +16,22 @@ https://nextjs.org/docs/messages/sync-dynamic-apis#possible-ways-to-fix-it
 */
 const MatchPage = async ({ params }: MatchPageProps) => {
   const { id } = await params;
+
+  // TODO: get match info from data already fetched from search page
+
   console.log(id);
 
   return (
-    <div>
+    <section>
       <h2>Matches Page</h2>
-    </div>
+      <Suspense fallback={<p>Loading video...</p>}>
+        <VideoPlayer
+          url="https://www.youtube.com/embed/GkCzsXrZyQA"
+          type="youtube"
+          timestamp={2386}
+        />
+      </Suspense>
+    </section>
   );
 };
 
